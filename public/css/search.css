@@ -1,0 +1,27 @@
+#search-row{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #706a6a;
+}
+.search-product{
+    
+    margin-left: 18%;
+}
+.prod-info{
+    margin-top: 2rem;
+    text-align: center;
+}
+.detailes-img{
+    height:23rem ;
+    width:20rem;
+}
+.butn{
+    margin: 1rem 0;
+}
+h2{
+    
+    color: rgb(32, 34, 43);
+}
+
+
+
