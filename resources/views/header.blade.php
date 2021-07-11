@@ -20,9 +20,7 @@
             <div class=" col-sm-7 col-lg-5  contact-logos">
                 @if($user == 1)   
                     <a href="{{ url('profile') }}" class="contact-logo"> My Account </a>
-                @endif
-                     <a href="{{ url('cartList') }}" class="contact-logo cart-logo"><i class="fas fa-shopping-cart"></i> My Cart ({{ $cart }}) </a>
-                @if($user == 1)
+                    <a href="{{ url('cartList') }}" class="contact-logo cart-logo"><i class="fas fa-shopping-cart"></i> My Cart ({{ $cart }}) </a>
                     <a href="{{ url('my-orders') }}" class="contact-logo"><i class="fab fa-shopify"></i> My Orders</a>
                     <a href="{{ route('signout') }}" class="contact-logo"><i class="fas fa-sign-out-alt "></i> logout</a>
                 @else
