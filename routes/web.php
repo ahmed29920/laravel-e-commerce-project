@@ -102,29 +102,21 @@ Route::group( ['middleware' => ['adminCheck']] , function(){
 });
 
 Route::get('/home',[homeController::class ,  'index' ]);
+Route::get('profile',[profileContoller::class ,  'index' ]);
+
+Route::get('rate-product',[productsController::class ,  'rateProduct' ])->name('rate');
+Route::get('like',[productsController::class ,  'like' ])->name('like');
 
 Route::get('product-detailes/{id}',[productsController::class ,  'detailes' ]);
 Route::get('product-search',[productsController::class ,  'search' ]);
 
-
-Route::get('like',[productsController::class ,  'like' ])->name('like');
-
-Route::get('profile',[profileContoller::class ,  'index' ]);
-
-
 Route::post('add-to-cart',[productsController::class ,  'addToCart' ]);
-
 Route::get('add-to-cart',[productsController::class ,  'addToCartInHome' ])->name('add-to-card');
-
 Route::get('cartList',[productsController::class ,  'cartList' ]);
 Route::get('remove-cart/{id}',[productsController::class ,  'removeCart' ]);
+
 Route::get('order-now',[productsController::class ,  'orderNow' ]);
 Route::post('order',[productsController::class ,  'order' ]);
-
-
-Route::get('rate-product',[productsController::class ,  'rateProduct' ])->name('rate');
-
-
 Route::get('my-orders',[productsController::class ,  'ordersList' ]);
 
 
